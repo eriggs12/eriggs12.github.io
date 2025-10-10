@@ -46,6 +46,7 @@ button{
     text-align: center;
     font-size: 15px;
     padding: 5px;
+    margin-left: 39px;
 }
 button:hover {
     background-color: lightblue;
@@ -80,6 +81,7 @@ blockquote{
 ul {
     list-style-type: square;
     font-size: 16px;
+    font-family: 'Roboto';
     color: black;
     margin-top: -15px;
 }
