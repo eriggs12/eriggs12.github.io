@@ -44,7 +44,8 @@ button{
     background-color: #89023e;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 5px;
 }
 button:hover {
     background-color: lightblue;
@@ -75,6 +76,14 @@ blockquote{
     text-align: center;
     padding: 10px 5px 10px 5px;
 }
+
+ul {
+    list-style-type: square;
+    font-size: 16px;
+    color: black;
+    margin-top: -15px;
+}
+
 footer p {
     color: white;
     padding: 7px 5px 7px 5px;
