@@ -53,7 +53,8 @@ button {
     font-weight: bold;
     text-align: center;
     font-size: 15px;
-    padding: 10px;
+    padding: 8px;
+    border: black;
 }
 button:hover {
     background-color: lightblue;
@@ -65,8 +66,8 @@ button:hover {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 15px;
     margin-left: 39px;
 }
 .button-link:hover {
