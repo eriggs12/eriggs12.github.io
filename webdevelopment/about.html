@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--
-  Name: ___
-  Date: ____
-  Page: ____
-  Description: ____
--->
-
-
-<!-- will contain logo and navigation; hamburger mobile navigation--> <header>My Website
-</header>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +7,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>About Page</title>
+   <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Starter Template</title>
 </head>
-<!-- link to external CSS for styling-->   <link rel="stylesheet" href="style.css"> 
+<!--
+  Name: ___
+  Date: ____
+  Page: ____
+  Description: ____
+-->
+  
+<!-- will contain logo and navigation; hamburger mobile navigation-->
+<body> 
+<header>About
+   <nav class="navbar">
+    <ul>
+      <li><img src="logo.png" style="width:75px;" alt="Your Site Logo" class="nav-logo"></li>
+      <li><a href="home.html">Home</a></li>
+      <li>
+        <a href="about.html">About</a>
+        <ul class="dropdown">
+          <li><a href="#">Cats</a></li>
+          <li><a href="#">Dogs</a></li>
+        </ul>
+      </li>
+      <li><a href="c.html">Content</a></li>
+      <li><a href="reflection.html">Resources</a></li>
+      <li><a href="e.html">Contact</a></li>
+    </ul>
+    </nav>
+</header>
 
-<!-- section includes all visible content of the webpage, including text, images, videos and interactive elements--><body>
+<main>
+<!-- section includes all visible content of the webpage, including text, images, videos and interactive elements-->
+
     <h1>About Page</h1>
     <h2>Learn More About Liz</h2>
     <p>Hi, I'm Liz and I’m an educator, serial hobbyist, proud cat mom, and lifelong learner. One of my greatest joys is blending my personal passions with my professional work, especially when it means creating meaningful, teachable moments through experiential learning. <br>
@@ -46,15 +65,16 @@
 </ul>
 
    <br>
-   <button>
-    <a href="Riggs__Resume.pdf" style="color: white;"> Resume link
-   </a>
-   </button> 
+  <a href="Riggs__Resume.pdf" class="button-link"> Resume link</a>
 
-</p>
- <!-- complete footer includes copyright, name, email, phone number and images--><footer>
-    <p> L. Riggs 2025      eriggs@missouri.edu</p>
+</main>
+ <!-- complete footer includes copyright, name, email, phone number and images-->  
+  <footer>
+    <ul class="footer">
+        <li>L. Riggs 2025 </li>
+        <li> eriggs@missouri.edu</li>
+    </ul>
 </footer> 
 
-</body>
+
 </html>

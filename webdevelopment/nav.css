@@ -2,45 +2,97 @@ header {
     background-color: #89023e;
     color: white;
     font-size: 15px;
-    text-indent: 10px;
-    padding-top: 5px;
+    margin: 0px;
+    padding-bottom: 5px;
     font-family: 'poppins';
 }
-
 nav {
-    background-color: white;
+    display: block;
+    width: 100%;
+    height: 55px;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
+
+li > ul {
+    display: none;
+}
+
+ul li ul.dropdown{
+    display: block;
+}
+
+.navbar ul li ul.dropdown {
+    display: none;
+}
+
+.navbar ul li:hover >ul.dropdown {
+    display: block;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    gap: 10px;
     background-color: white;
+    color: #15616d;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+nav > ul li {
+    width: 150px;
+    position: relative;
+    text-align: center;
 
 }
+
+nav ul > li ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+.dropdown li a:hover {
+    background: #b1dfe6;
+}
+
+
+ul li ul.dropdown{
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+}
+
 .nav-logo {
-    width: 50px;
     height: auto;
     background-color: white;
-}
-.navbar ul {
-    list-style: none;
-    padding: 5px;
-    margin: 0px;
-    display: flex;
-}
-.navbar ul li {
-    margin-right: 40px;
-}
+    float: left;
 
-.navbar a {
-    display: block;
-    font-size: 15px;
+}
+.navbar a{
+    font-size: 12px;
     color: #15616d;
+    background-color: white;
+    text-decoration: none;
+    padding: 6px;
+    display: block;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
-    gap: 10px;
-    
 }
+
+.navbar ul li a {
+    display: block;
+}
+
 .navbar a:hover {
     background-color: rgb(182, 216, 252);
 }
+
