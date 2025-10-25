@@ -53,7 +53,8 @@ button {
     font-weight: bold;
     text-align: center;
     font-size: 15px;
-    padding: 10px;
+    padding: 8px;
+    border: black;
 }
 button:hover {
     background-color: lightblue;
@@ -136,12 +137,31 @@ ul {
 }
 .footer{
     color: white;
-    padding: 7px 5px 7px 5px;
+    padding: 20px 5px 7px 5px;
     font-size: 12px;
     background-color: #15616d;
     font-family: 'poppins';
     display: flex;
     list-style: none;
     justify-content: space-around;
-    
+}
+
+.headshot{
+    float: right;
+    display: flex;
+    width: 150px;
+    margin: 10px;
+    border: dotted 4px #15616d;
+    border-radius: 5px;
+
+}
+
+video {
+    float: left;
+    display: flex;
+    margin: 10px;
+}
+
+video:hover {
+    transform: scale(1.20);
 }
