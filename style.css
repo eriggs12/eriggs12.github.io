@@ -144,5 +144,24 @@ ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    
+}
+
+.headshot{
+    float: right;
+    display: flex;
+    width: 150px;
+    margin: 10px;
+    border: dotted 4px #15616d;
+    border-radius: 5px;
+
+}
+
+video {
+    float: left;
+    display: flex;
+    margin: 10px;
+}
+
+video:hover {
+    transform: scale(1.20);
 }
