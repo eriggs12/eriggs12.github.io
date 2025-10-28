@@ -166,8 +166,7 @@ video:hover {
     transform: scale(1.20);
 }
 
-@media print {  h1, p, ul,.footer;
-nav,{display: none;}
+@media print {  h1, p, ul,.footer
 body {
     font-size: 12pt;
     line-height: 1.3;
