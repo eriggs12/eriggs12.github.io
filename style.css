@@ -169,14 +169,14 @@ video:hover {
 @media print {
     * {color: black !important;
     background-color: white !important;
-    font-family: serif;}
+    font-family: serif !important;
+    margin: 1in;}
 
 nav{display:none;}
          
 body {
     font-size: 12pt;
-    line-height: 1.1;
-    margin: 0;
+    line-height: 1.2;
 }
 .footer{
     img {display: none;
