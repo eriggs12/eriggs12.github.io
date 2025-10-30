@@ -167,10 +167,12 @@ video:hover {
 }
 
 @media print {
+    @page {
+        margin: 1inc;
+    }
     * {color: black !important;
     background-color: white !important;
-    font-family: serif !important;
-    margin: 1in;}
+    font-family: serif !important;}
 
 nav{display:none;}
          
