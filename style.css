@@ -179,6 +179,7 @@ nav{display:none;}
 body {
     font-size: 12pt;
     line-height: 1.2;
+    list-style: none;
 }
 .footer{
     img {display: none;
