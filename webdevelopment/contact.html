@@ -23,17 +23,17 @@
    <nav class="navbar">
     <ul>
       <li><img src="logo.png" style="width:75px;" alt="Your Site Logo" class="nav-logo"></li>
-      <li><a href="a.html">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li>
-        <a href="b.html">About</a>
+        <a href="about.html">About</a>
         <ul class="dropdown">
           <li><a href="#">Cats</a></li>
           <li><a href="#">Dogs</a></li>
         </ul>
       </li>
       <li><a href="c.html">Content</a></li>
-      <li><a href="d.html">Resources</a></li>
-      <li><a href="e.html">Contact</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     </nav>
 </header>
@@ -44,26 +44,31 @@
     <div class="contentpar"><p>Got a question, suggestion or idea? I'd love to hear from you!</p></div>
 <div class="container">
   <form action="contact.php">
-    <label for="title">Title</label>
     <select id="title" name="Title">
-        <option value="None">None</option>       
+      <option value="None">None</option>       
       <option value="Mr.">Mr.</option>
       <option value="Ms.">Ms.</option>
       <option value="Miss">Miss</option>
       <option value="Dr.">Dr.</option>
-
     </select>
+
     <label for="fname">First Name <em>(required)</em></label>
-    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
 
     <label for="lname">Last Name <em>(required)</em></label>
-    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
 
     <label for="email">Email <em>(required)</em></label>
-    <input type="text" id="email" name="email" placeholder="Enter your email address">
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
 
     <label for="subject">Subject <em>(required)</em></label>
     <textarea id="subject" name="subject" placeholder="Add your message" style="height:200px"></textarea>
+
+<p>My favorite pet is a...</p>
+            <label><input type="radio" name="pet" value="dog">Dog</label><br>
+            <label><input type="radio" name="pet" value="cat">Cat</label><br>
+            <label><input type="radio" name="pet" value="bird">Bird</label><br>
+            <label><input type="radio" name="pet" value="other">Other</label><br><br>
 
     <input type="submit" value="Submit Form">
 
