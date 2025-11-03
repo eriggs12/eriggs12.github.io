@@ -186,3 +186,36 @@ body {
     color: black;}
 }
 }
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid gray;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #89023e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;}
+
+
+input[type=submit]:hover {
+  background-color: #500125;}
+
+.container {
+  border-radius: 5px;
+  background-color: #e4dfda;
+  padding: 20px;}
+
+  .contentpar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center !important;}
