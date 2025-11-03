@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css"><link rel="stylesheet" href="style.css">
+    <title>My Starter Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<!--
+  Name: ___
+  Date: ____
+  Page: ____
+  Description: ____
+-->
+  
+<!-- will contain logo and navigation; hamburger mobile navigation--> 
+<header>My Website <br>
+   <nav class="navbar">
+    <ul>
+      <li><img src="logo.png" style="width:75px;" alt="Your Site Logo" class="nav-logo"></li>
+      <li><a href="a.html">Home</a></li>
+      <li>
+        <a href="b.html">About</a>
+        <ul class="dropdown">
+          <li><a href="#">Cats</a></li>
+          <li><a href="#">Dogs</a></li>
+        </ul>
+      </li>
+      <li><a href="c.html">Content</a></li>
+      <li><a href="d.html">Resources</a></li>
+      <li><a href="e.html">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+<!-- section includes all visible content of the webpage, including text, images, videos and interactive elements-->
+    <h1>Let's Get in Touch</h1>
+    <div class="contentpar"><p>Got a question, suggestion or idea? I'd love to hear from you!</p></div>
+<div class="container">
+  <form action="contact.php">
+    <label for="title">Title</label>
+    <select id="title" name="Title">
+        <option value="None">None</option>       
+      <option value="Mr.">Mr.</option>
+      <option value="Ms.">Ms.</option>
+      <option value="Miss">Miss</option>
+      <option value="Dr.">Dr.</option>
+
+    </select>
+    <label for="fname">First Name <em>(required)</em></label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+
+    <label for="lname">Last Name <em>(required)</em></label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+
+    <label for="email">Email <em>(required)</em></label>
+    <input type="text" id="email" name="email" placeholder="Enter your email address">
+
+    <label for="subject">Subject <em>(required)</em></label>
+    <textarea id="subject" name="subject" placeholder="Add your message" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit Form">
+
+  </form>
+</div>
+
+
+</main>
+
+ <!-- complete footer includes copyright, name, email, phone number and images-->
+  <footer>
+    <ul class="footer">
+        <li>L. Riggs 2025</li>
+        <li> <img src="media/phoneicon.png" alt="phone" width="15px"> &nbsp;555-555-5555</li>
+        <li> <img src="media/emailicon.png" alt="email" width="15px"> &nbsp; eriggs@missouri.edu </li>
+    </ul>
+</footer> 
+
+</body>
+</html>
