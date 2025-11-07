@@ -232,3 +232,35 @@ input[type=submit]:hover {
 .pets {
     list-style-type: none !important;
 }
+
+
+#layout {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    gap: 4px;
+}
+
+#one {  
+    grid-column: span 2 / span 2;
+    grid-row-start: 1;
+}
+#two{
+   grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+#three {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+#four {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#five {
+    grid-column: span 3/ span 3;
+    grid-row-start: 5;
+}
