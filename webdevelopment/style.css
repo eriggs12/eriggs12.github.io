@@ -1,8 +1,9 @@
 
 header {
     color: white;
+    background-color: #89023e
     font-weight:bold;
-    padding: 10px 5px 15px 5px;
+    margin: 0;
 }
 
 .hero h1 {
@@ -253,6 +254,7 @@ input[type=submit]:hover {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
+    background-color: #e4dfda;
 }
 #four {
     grid-row-start: 3;
@@ -263,4 +265,28 @@ input[type=submit]:hover {
 #five {
     grid-column: span 3/ span 3;
     grid-row-start: 5;
+}
+
+.mobile-menu li {
+  display: none;
+}
+
+#menu-toggle:checked ~ .mobile-menu {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
 }

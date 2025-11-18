@@ -12,6 +12,7 @@ nav {
     height: 55px;
 }
 
+
 li > ul {
     display: none;
 }
@@ -29,17 +30,18 @@ ul li ul.dropdown{
 }
 
 .navbar ul {
-    margin: 0;
-    padding: 0;
-    gap: 10px;
-    background-color: white;
-    color: #15616d;
-    list-style: none;
     display: flex;
-    justify-content: space-around;
     align-items: flex-start;
-    gap: 200px;
+    margin: 0;
+    padding: .5em;
+    gap: 10px;
+    background-color:white;
+    color: white;
+    list-style: none;
+    flex-shrink: 2;
+
 }
+
 
 nav > ul li {
     width: 150px;
@@ -74,7 +76,7 @@ ul li ul.dropdown{
 .nav-logo {
     height: auto;
     background-color: white;
-    float: left;
+    margin-right: auto;
 
 }
 .navbar a{
@@ -95,4 +97,15 @@ ul li ul.dropdown{
 .navbar a:hover {
     background-color: rgb(182, 216, 252);
 }
+
+
+.header .menu-icon .nav-icon:before{
+    background: darkgray;
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+}
+
 

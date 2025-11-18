@@ -10,6 +10,8 @@
    <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css"><link rel="stylesheet" href="style.css">
     <title>My Starter Template</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale">
+
 </head>
 <!--
   Name: ___
@@ -20,7 +22,8 @@
   
 <!-- will contain logo and navigation; hamburger mobile navigation--> 
 <header>My Website <br>
-   <nav class="navbar">
+
+  <nav class="navbar">
     <ul>
       <li><img src="logo.png" style="width:75px;" alt="Your Site Logo" class="nav-logo"></li>
       <li><a href="a.html">Home</a></li>
@@ -34,8 +37,18 @@
       <li><a href="c.html">Content</a></li>
       <li><a href="d.html">Resources</a></li>
       <li><a href="e.html">Contact</a></li>
-    </ul>
-    </nav>
+    </ul></nav>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">☰</label>
+    <span></span>    
+<nav class="mobile-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 </header>
 
 <main>
@@ -56,4 +69,3 @@
 
 </body>
 </html>
-
