@@ -126,8 +126,17 @@ ul li ul.dropdown{
     text-decoration: none;
      gap: 3px
 }
+
+.mobile-menu a:hover {
+  background-color: rgb(182, 216, 252); 
+}
+
 #menu-toggle:checked ~ .mobile-menu {
   display: flex;
+}
+
+.navdropdown {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -166,16 +175,45 @@ ul li ul.dropdown{
   .digitalannotation {
     flex-direction: column-reverse; /* stack vertically */
     align-items: flex-start;
-
+  }
+  .digitalannotation h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .digitalannotation p {
+    font-size: 12px;
   }
   .shortcutkeys {
     flex-direction: column; /* stack vertically */
     align-items: flex-start;
   }
+    .shortcutkeys h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+    .shortcutkeys ul {
+    font-size: 14px;
+  }
+  .shortcutkeys p {
+    font-size: 12px;
+  }
+  .digitizing h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .digitizing p {
+    font-size: 12px;}
+  .digitizing ul {
+    font-size: 14px;}
+
   .projectshortcuts{
     flex-direction: column; /* stack vertically */
     align-items: flex-start;
-  }
-
+ }
+ .projectshortcuts .column {
+    padding: 10px;
+    border: 0;
+    margin: 0; 
+ }
   }
 
