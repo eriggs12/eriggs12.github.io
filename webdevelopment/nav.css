@@ -100,6 +100,10 @@ ul li ul.dropdown{
     background-color: rgb(182, 216, 252);
 }
 
+.projectshortcuts a:hover {
+      background-color: rgb(182, 216, 252); 
+}
+
 
 .header .menu-icon .nav-icon:before{
     background: darkgray;
@@ -158,4 +162,20 @@ ul li ul.dropdown{
  }
 }
 
+@media (max-width: 600px) {
+  .digitalannotation {
+    flex-direction: column-reverse; /* stack vertically */
+    align-items: flex-start;
+
+  }
+  .shortcutkeys {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+  }
+  .projectshortcuts{
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+  }
+
+  }
 
