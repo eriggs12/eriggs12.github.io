@@ -201,6 +201,15 @@ ul li ul.dropdown{
     font-size: 14px;
     text-align: center;
   }
+  caption {
+    font-size: 14px !important;
+  }
+  th {
+    font-size: 12px !important;
+  }
+  td {
+    font-size: 10px !important;
+  }
   .digitizing p {
     font-size: 12px;}
   .digitizing ul {
