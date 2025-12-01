@@ -28,6 +28,8 @@ ul li ul.dropdown{
 
 .navbar ul li:hover >ul.dropdown {
     display: block;
+    width: auto;
+    margin: 5px;
 }
 
 .navbar ul {

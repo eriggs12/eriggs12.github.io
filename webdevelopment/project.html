@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom font used here --><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
    <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css"><link rel="stylesheet" href="style.css">
-    <title>Project</title>
+    <title>Content Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 </head>
@@ -42,9 +42,12 @@
 <input type="checkbox" id="menu-toggle">
 <label for="menu-toggle" class="hamburger" aria-label="menu-toggle">☰</label>
 <nav class="mobile-menu">
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+        <ul class="dropdown">
+          <li><a href="project.html#section1">Digital Annotation</a></li>
+          <li><a href="project.html#section2">Shortcut Keys</a></li>
+          <li><a href="project.html#section3">Paper Based Materials</a></li>
+        </ul>
+      </li>
       <li><a href="project.html">Content</a></li>
       <li><a href="resources.html">Resources</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -66,7 +69,7 @@
         <h3><a href="#section3">Paper Based Materials</a></h3>
         <p>Digitizing familiar instructional materials makes it easy to reuse, share, and adapt classroom resources for online learning</p>
   </div>    </div>
-
+<div class="guides">
 <div class="digitalannotation">
   <div class="text">
     <h2 id="section1">Digital Annotation</h2>
@@ -97,7 +100,7 @@ Beyond the commonly used shortcuts like <b>Ctrl+C, Ctrl+V, and Ctrl+Z</b>, I’v
   </div>
 <div class="image"><img src="media/keys.png" alt="keyboard characters">
   </div></div>
-
+</div>
   <table>
   <caption>Additonal Shortcuts for Windows and Mac Users</caption>  
   <thead>
