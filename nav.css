@@ -28,13 +28,16 @@ ul li ul.dropdown{
 
 .navbar ul li:hover >ul.dropdown {
     display: block;
+    width: auto;
+    margin: 5px;
 }
-
+.navbar {
+  padding-bottom: 25px;
+}
 .navbar ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 0;
     padding: .5em;
     gap: 10px;
     background-color:white;
@@ -100,6 +103,10 @@ ul li ul.dropdown{
     background-color: rgb(182, 216, 252);
 }
 
+.projectshortcuts a:hover {
+      background-color: rgb(182, 216, 252); 
+}
+
 
 .header .menu-icon .nav-icon:before{
     background: darkgray;
@@ -110,4 +117,118 @@ ul li ul.dropdown{
     top: 5px;
 }
 
+.mobile-menu {
+  display: none;
+  width: 100%;
+  height: 100px;
+  gap: 1rem;
+}
+
+.mobile-menu ul a{
+    color: white;
+    text-decoration: none;
+     gap: 3px
+}
+#menu-toggle {
+  display: none;
+}
+.mobile-menu a:hover {
+  background-color: rgb(182, 216, 252); 
+}
+
+#menu-toggle:checked ~ .mobile-menu {
+  display: flex;
+}
+
+.navdropdown {
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }}
+
+@media (max-width:768px){
+
+ .hamburger {
+    display: block;
+    margin-left: auto;
+ }
+  .mobile-menu ul{
+    display: block;
+    list-style-type: none;
+    padding: 2px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+ .navbar {
+    display: none;
+ }
+ .hamburger:hover .mobile-menu {
+    display: block;
+    list-style-type: none;
+    padding: 4px;
+    gap: 1rem;
+ }
+}
+
+@media (max-width: 600px) {
+  .digitalannotation {
+    flex-direction: column-reverse; /* stack vertically */
+    align-items: flex-start;
+  }
+  .digitalannotation h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .digitalannotation p {
+    font-size: 12px;
+  }
+  .shortcutkeys {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+  }
+    .shortcutkeys h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+    .shortcutkeys ul {
+    font-size: 14px;
+  }
+  .shortcutkeys p {
+    font-size: 12px;
+  }
+  .digitizing h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  caption {
+    font-size: 14px !important;
+  }
+  th {
+    font-size: 12px !important;
+  }
+  td {
+    font-size: 10px !important;
+  }
+  .digitizing p {
+    font-size: 12px;}
+  .digitizing ul {
+    font-size: 14px;}
+
+  .projectshortcuts{
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+ }
+ .projectshortcuts .column {
+    padding: 10px;
+    border: 0;
+    margin: 0; 
+ }
+  }
 

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom font used here --><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-   <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css">
-    <title>My Starter Template</title>
+   <!-- link to external CSS for styling--> <link rel="stylesheet" href="nav.css"><link rel="stylesheet" href="style.css">
+    <title>About Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <!--
   Name: ___
@@ -20,46 +20,47 @@
   
 <!-- will contain logo and navigation; hamburger mobile navigation-->
 <body> 
-<header>About
-   <nav class="navbar">
+  <div id="layout">
+    <div id="one">
+<header>About Page
+ <nav class="navbar">
     <ul>
       <li><img src="logo.png" style="width:75px;" alt="Your Site Logo" class="nav-logo"></li>
       <li><a href="home.html">Home</a></li>
       <li>
         <a href="about.html">About</a>
         <ul class="dropdown">
-          <li><a href="#">Cats</a></li>
-          <li><a href="#">Dogs</a></li>
+          <li><a href="project.html#section1">Digital Annotation</a></li>
+          <li><a href="project.html#section2">Shortcut Keys</a></li>
+          <li><a href="project.html#section3">Paper Based Materials</a></li>
         </ul>
       </li>
-      <li><a href="c.html">Content</a></li>
+      <li><a href="project.html">Content</a></li>
       <li><a href="resources.html">Resources</a></li>
-      <li><a href="e.html">Contact</a></li>
-    </ul>
-    </nav>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger" aria-label="menu-toggle">☰</label>
+<nav class="mobile-menu">
+        <ul class="dropdown">
+          <li><a href="project.html#section1">Digital Annotation</a></li>
+          <li><a href="project.html#section2">Shortcut Keys</a></li>
+          <li><a href="project.html#section3">Paper Based Materials</a></li>
+        </ul>
+      </li>
+      <li><a href="project.html">Content</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+
+    <div id="two"><h1>About Page</h1>
+    </div> 
+  </div>      
 </header>
 
-<main>
-<!-- section includes all visible content of the webpage, including text, images, videos and interactive elements-->
-
-    <h1>About Page</h1>
-      <img src="media/headshot.jpg" alt="headshot of Liz" class="headshot">
-
-
-    <h2>Learn More About Liz</h2>
-
-    <p>Hi, I'm Liz and I’m an educator, serial hobbyist, proud cat mom, and lifelong learner. One of my greatest joys is blending my personal passions with my professional work, especially when it means creating meaningful, teachable moments through experiential learning. <br>
-      </p>
-
-      <p>With my academic training as a school counselor and over fourteen years of direct teaching experience in both full and part-time roles, I've worked across the educational spectrum—from public K–12 schools to higher education and adult education programs. My primary focus has always been minimizing barriers and expanding opportunities for all learners, with a special focus on supporting students from marginalized communities and non-traditional students. <br>
-      </p>
-        <p>
-                <video src="media/resume video.mp4"controls width="166" height="200"><source src="media/resume video.mp4">Your browser does not support the video tag</video>
-
-          I am deeply committed to the belief that highly qualified teachers are essential to student success. One of the highlights of my career has been supporting my adult ESL learners as they improve their English language skills, build confidence in navigating their local community, pursue degrees in higher education and seek out better employment opportunities.<br> 
-      <br> Whether I’m in the classroom, mentoring, or exploring a new hobby, I strive to make every moment a chance to learn, grow, and give back. <br></p>
-    
-
+    <div id="three">
 <h3> Adult ESL Education Teaching Experience</h3>
 <ul>
     <li>Literacy Level - 2018-2021 - in-person and virtual</li>
@@ -76,15 +77,43 @@
    <br>
   <a href="Riggs__Resume.pdf" class="button-link"> Resume link</a>
   <br><br>
+    </div>
 
-</main>
- <!-- complete footer includes copyright, name, email, phone number and images-->  
+
+ <div id="four">
+  <main>
+<!-- section includes all visible content of the webpage, including text, images, videos and interactive elements-->
+
+
+      <img src="media/headshot.jpg" alt="headshot of Liz" class="headshot">
+
+
+    <h2>Learn More About Liz</h2>
+
+    <p>Hi, I'm Liz and I’m an educator, serial hobbyist, proud cat mom, and lifelong learner. One of my greatest joys is blending my personal passions with my professional work, especially when it means creating meaningful, teachable moments through experiential learning. <br>
+      </p>
+
+      <p>With my academic training as a school counselor and over fourteen years of direct teaching experience in both full and part-time roles, I've worked across the educational spectrum—from public K–12 schools to higher education and adult education programs. My primary focus has always been minimizing barriers and expanding opportunities for all learners, with a special focus on supporting students from marginalized communities and non-traditional students. <br>
+      </p>
+        <p>
+                <video src="media/resume video.mp4" controls width="166" height="200"><source src="media/resume video.mp4">Your browser does not support the video tag</video>
+
+          I am deeply committed to the belief that highly qualified teachers are essential to student success. One of the highlights of my career has been supporting my adult ESL learners as they improve their English language skills, build confidence in navigating their local community, pursue degrees in higher education and seek out better employment opportunities.<br> 
+      <br> Whether I’m in the classroom, mentoring, or exploring a new hobby, I strive to make every moment a chance to learn, grow, and give back. <br></p>
+      </main>
+</div>
+    
+    <div id="five">
   <footer>
     <ul class="footer">
-        <li>L. Riggs 2025 </li>
-        <li> eriggs@missouri.edu</li>
+        <li>L. Riggs 2025</li>
+        <li> <img src="media/phoneicon.png" alt="phone" style= "width:15px"> &nbsp;555-555-5555</li>
+        <li> <img src="media/emailicon.png" alt="email" style= "width:15px"> &nbsp; eriggs@missouri.edu </li>
     </ul>
 </footer> 
+    </div>
+
+  </div> 
 </body>
 
 </html>
