@@ -323,7 +323,13 @@ input[type=submit]:hover {
   align-items: center; /* vertically align image and text */
   gap: 1rem;           /* space between image and text */
 }
+.digitalannotation h2 {
+    margin-top: 40px;
+}
 
+#annotation1 img {
+    margin-top: 40px;
+}
 
 .image img {
     max-width: 500px;   /* control image size */
@@ -407,4 +413,5 @@ tr:hover {
 
 .guides h2{text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Custom styles for all <h2> elements */
 letter-spacing: 1px;
+margin-bottom: 20px;
 }
