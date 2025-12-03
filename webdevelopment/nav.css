@@ -31,12 +31,13 @@ ul li ul.dropdown{
     width: auto;
     margin: 5px;
 }
-
+.navbar {
+  padding-bottom: 25px;
+}
 .navbar ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 0;
     padding: .5em;
     gap: 10px;
     background-color:white;
@@ -128,7 +129,9 @@ ul li ul.dropdown{
     text-decoration: none;
      gap: 3px
 }
-
+#menu-toggle {
+  display: none;
+}
 .mobile-menu a:hover {
   background-color: rgb(182, 216, 252); 
 }
@@ -150,6 +153,7 @@ ul li ul.dropdown{
 
  .hamburger {
     display: block;
+    margin-left: auto;
  }
   .mobile-menu ul{
     display: block;
