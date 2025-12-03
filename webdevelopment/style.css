@@ -146,14 +146,26 @@ ul {
 }
 .footer{
     color: white;
-    padding: 20px 5px 7px 5px;
+    padding: 15px 5px 10px 5px;
+    height: 20px;
     font-size: 12px;
     background-color: #15616d;
     font-family: 'poppins';/* Custom font from Google Fonts applied to site */
     display: flex;
     list-style: none;
+    align-items: center;
     justify-content: space-around;
 }
+.footer .emailicon {
+   vertical-align: middle;
+}
+
+.footer img:hover {
+    transform: scale(1.4);
+    color: #89023e;
+    box-shadow: 0 0 8px rgba(0, 150, 255, 0.6)
+}
+
 
 .headshot {
     float: right;
