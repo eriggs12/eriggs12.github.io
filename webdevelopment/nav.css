@@ -92,6 +92,7 @@ ul li ul.dropdown{
     display: block;
     font-weight: bold;
     text-align: center;
+    text-indent: -10px;
 }
 
 .navbar ul li a {
@@ -176,8 +177,8 @@ ul li ul.dropdown{
     gap: 1rem;
  }
 }
-
-@media (max-width: 600px) {
+/* display changes for mobile and tablet users */
+@media (max-width: 600px) {  
   .digitalannotation {
     flex-direction: column-reverse; /* stack vertically */
     align-items: flex-start;
@@ -229,6 +230,10 @@ ul li ul.dropdown{
     padding: 10px;
     border: 0;
     margin: 0; 
+ }
+ .greetings {
+    font-size: 16px;
+    text-align: center;
  }
   }
 
