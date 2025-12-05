@@ -93,6 +93,7 @@ ul li ul.dropdown{
     font-weight: bold;
     text-align: center;
     text-indent: -10px;
+    position: relative;
 }
 
 .navbar ul li a {
@@ -176,9 +177,19 @@ ul li ul.dropdown{
     padding: 4px;
     gap: 1rem;
  }
+
+
 }
 /* display changes for mobile and tablet users */
 @media (max-width: 600px) {  
+  
+ .image-container .button-link {
+  display: none;
+} 
+  .image-container h1 {
+  font-size: 25px;
+  line-height: 1.2;
+ } 
   .digitalannotation {
     flex-direction: column-reverse; /* stack vertically */
     align-items: flex-start;
@@ -234,6 +245,9 @@ ul li ul.dropdown{
  .greetings {
     font-size: 16px;
     text-align: center;
+ }
+ .names {
+  flex-direction: column;
  }
   }
 
